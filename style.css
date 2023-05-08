@@ -32,7 +32,7 @@ a {
 }
 
 button {
-	background-color: #128C7E;
+	background-color: #080075;
 	color: #fff;
 	border: none;
 	padding: 10px 20px;
@@ -82,7 +82,7 @@ nav a {
 }
 
 nav a:hover {
-	border-bottom: 2px solid #007bff;
+	border-bottom: 2px solid #000158;
 }
 
 

@@ -87,7 +87,7 @@ p {
 }
 
 .btn-vm:active {
-  background: #003de6;
+  background: #03009e;
 }
 
 .btn {
@@ -125,7 +125,7 @@ a {
   text-decoration: none !important;
 }
 a:hover, a:active, a:focus {
-  color: rgb(0, 225, 255);
+  color: #ffffff;
   font-size: x-large;
   outline: none;
 }
@@ -280,7 +280,7 @@ a:hover, a:active, a:focus {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(0, 225, 255);
+  background-color: #03009e;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -307,7 +307,7 @@ a:hover, a:active, a:focus {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  background-color: rgb(0, 225, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .navbar-default .navbar-nav > li a:hover {
@@ -316,7 +316,7 @@ a:hover, a:active, a:focus {
 
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-    color: rgb(0, 225, 255);
+    color: rgb(255, 255, 255);
     background-color: transparent;
 }
 
@@ -531,8 +531,8 @@ nav img {
 #contact .form-control {
   background: transparent;
   box-shadow: none;
-  border: 1px solid #f9f9f9;
-  color: #ccc;
+  border: 1px solid #03009e;
+  color: #03009e;
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 14px;
@@ -541,7 +541,7 @@ nav img {
 
 #contact .form-control:focus {
   border-color: #03009e;
-  color: #ffffff;
+  color: #03009e;
 }
 
 #contact input {
