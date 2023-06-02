@@ -655,6 +655,7 @@ footer {
 
   #home, .overlay {
     height: 100vh;
+    font-size: 1.5rem;
   }
 
   #about .about-thumb {
