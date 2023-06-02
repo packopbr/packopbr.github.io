@@ -76,26 +76,34 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
 <!-- Home section -->
 
-<section id="home">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <h1 class="wow fadeInUp" data-wow-delay="0.6s">INOVANDO SEMPRE!</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">
-        </p>
-        <!-- <a onclick="location.href='#gallery'"
-           class="smoothScroll btn btn-success btn-lg wow fadeInUp"
-           data-wow-delay="1.2s">Veja mais</a> -->
+<style>
+  @keyframes shine {
+    0% { text-shadow: none; }
+    50% { text-shadow: 0 0 10px #ffffff, 0 0 20px #1a0e86, 0 0 30px #1a0e86; }
+    100% { text-shadow: none; }
+  }
+  
+  .shining-text {
+    animation: shine 2s infinite;
+  }
+  </style>
+  
+  <section id="home">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
+          <h1 class="wow fadeInUp shining-text" data-wow-delay="0.6s" style="font-size: 30px;">MAXIMIZANDO SUA PRODUTIVIDADE SIMPLIFICANDO SUA LOGÍSTICA</h1>
+          <p class="wow fadeInUp" data-wow-delay="0.9s"></p>
           <a onclick="location.href='#gallery'"
-            class="smoothScroll btn btn-vm btn-lg wow fadeInUp">VEJA MAIS</a>
-
+             class="smoothScroll btn btn-vm btn-lg wow fadeInUp">VEJA MAIS</a>
+        </div>
+  
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
+  
 
 
 <!-- Gallery section -->
@@ -106,26 +114,63 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
       <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <div class="section-title">
-          <h1>Nosso Produto</h1>
+          <h2 style="font-size: 30px;">Nosso Produto</h2>
         </div>
       </div>
 
-      <ul class="grid cs-style-1">
-        <li class="col-md-6 col-sm-6">
+      <ul class="grid cs-style-1" style="text-align: center;">
+        <li style="display: inline-block;">
           <figure>
-            <div><img src="images/gallery-img1.jpg" alt="image 1"></div>
+            <div style="display: inline-block;">
+              <img src="images/gallery-img1.jpg" alt="image 1" style="max-width: 500px; display: block; margin: 0 auto;">
+            </div>
           </figure>
         </li>
+      </ul>
+      <h1> </h1>
+      <h1> </h1>
+      <style>
+        .responsive-video-container {
+          display: flex;
+          justify-content: center;
+        }
+      
+        .responsive-video {
+          width: 50%;
+          height: auto;
+        }
+      </style>
+      
+      <div class="responsive-video-container">
+        <video class="responsive-video" controls>
+          <source src="images/videoproduto.mp4" type="video/mp4">
+          Desculpe, mas o seu navegador não suporta a reprodução deste vídeo.
+        </video>
+      </div>
+      
+      
 
-       <li class="col-md-6 col-sm-6">
+      <!-- <li class="col-md-6 col-sm-6">
           <figure>
             <div><img src="images/gallery-img2.jpg" alt="image 2"></div>
           </figure>
-        </li>
-
-        <li>
+        </li> -->
+        <h1> </h1>
+        <h1> </h1>
+       <!-- <li>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/gvqDN6tu4sI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </li>
+        </li> -->
+
+        <h1 style="font-size: 25px; line-height: 0.8; letter-spacing: 3px;">Descrição do Produto</h1>
+        <p style="text-align: center; line-height: 1.2;">
+          <small style="font-size: 19px;">
+            PACKOP é um equipamento projetado para otimizar o transporte e encaminhamento de caixas e produtos em sua empresa. Com este sistema avançado, você poderá desfrutar de uma logística eficiente, reduzir erros e aumentar a produtividade.
+Nosso equipamento é composto por um conjunto de esteiras que garantem o fluxo contínuo e suave dos itens, proporcionando uma movimentação ágil e segura. Além disso, o sistema conta com um sensor altamente preciso que realiza a leitura das dimensões dos itens.
+Com base na leitura realizada pelo sensor, o nosso sistema de controle central entra em ação, enviando comandos para as esteiras seguintes e direcionando cada item para o seu destino correto. Assim, isso elimina a necessidade de intervenção manual constante, reduzindo erros de encaminhamento e garantindo que cada produto chegue ao local adequado de forma eficiente.
+          </small>
+        </p>
+        
+
 
       </ul>
 
@@ -154,7 +199,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
+      <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.0s">
         <img src="images/logo2.png" class="img-responsive img-circle" alt="About">
       </div>
 
@@ -166,9 +211,35 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
 
       <div class="clearfix"></div>
 
+      <style>
+        .responsive-video-container {
+          display: flex;
+          justify-content: center;
+        }
+      
+        .responsive-video {
+          width: 80%;
+          height: auto;
+        }
+      </style>
+      
+      <!-- <div class="responsive-video-container">
+        <video class="responsive-video" controls>
+          <source src="images/video.mp4" type="video/mp4">
+          Desculpe, mas o seu navegador não suporta a reprodução deste vídeo.
+        </video>
+      </div> -->
+      
+      <div style="text-align: center;">
+        <li>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/VlPvZu2e4VE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </li>
+      </div>
+      
+
       <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
         <div class="section-title text-center">
-          <h1>PACKOP</h1>
+          <h2 style="font-size: 24px;">PACKOP</h2>
           <h3>Integrantes da equipe</h3>
         </div>
       </div>
